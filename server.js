@@ -14,7 +14,7 @@ app.listen(port, (err) => {
 
 app.get("/gettime", function (req, res) {
   res.writeHead(200, { "Content-Type": "text/html" });
-  const result = data.createElement();
+  const result = data.createTime();
   res.write(result);
   res.end();
 });
